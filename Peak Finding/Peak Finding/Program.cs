@@ -11,17 +11,15 @@ namespace Peak_Finding
         static void Main(string[] args)
         {
             int[][] problem = new[]{
-	            new [] {0,  0,  9,  0,  0,  0,  0},
-	            new [] {0,  0,  0,  0,  0,  0,  0},
-	            new [] {0,  1,  0,  0,  0,  8,  9},
-	            new [] {0,  2,  0,  0,  0,  0,  0},
-	            new [] {0,  3,  0,  0,  0,  0,  0},
-	            new [] {0,  5,  0,  0,  0,  0,  0},
-	            new [] {0,  4,  7,  0,  0,  0,  0},
+	            new [] {9,  19,  20},
+	            new [] {18,  17,  13},
+	            new [] {6,  15,  31}
+	           
             };
             int peak = new Program().FindPeak(problem);
 
             Console.WriteLine("Found a peak with value	: {0}", peak);
+            Console.ReadLine();
         }
 
 
